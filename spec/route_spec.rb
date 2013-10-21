@@ -8,18 +8,29 @@ describe "routes" do
     TestApp
   end
 
+  # notice that we are only checking for a valid route
+  # and not any content specifically. These are "route"
+  # tests that define what routes our application handles
+  # the tests for our individual routes and the operations
+  # they perform are in the other spec files
+
+  # separation of concerns applies in tests, too!
+
   it "handles GET to /" do
-    #get is a helper from Rack::Test
-    #which is included in spec_helper
+    # 'get' is a helper from Rack::Test
+    # which is included in spec_helper.
+    # it specifies a get request.
     get '/'
-    #be_ok is a helper from Rack::Test
+    # be_ok is a helper from Rack::Test
     expect(last_response).to be_ok
-    #last_response.be_ok is the equivalent
-    #of checking for HTTP status code 200
+    # be_ok is the equivalent
+    # of checking for HTTP status code 200
     expect(last_response.status).to eq(200)
   end
 
   it "handles POST to /" do
+    # 'post' is a helper from Rack::Test
+    # it specifies a post request.
     post '/'
     expect(last_response).to be_ok
   end
