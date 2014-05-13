@@ -1,6 +1,6 @@
 ---
-tags: sinatra, rspec
-language: ruby
+  tags: sinatra, rspec
+  language: ruby
   resources: 2
 ---
 
