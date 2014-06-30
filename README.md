@@ -1,5 +1,5 @@
 ---
-  tags: sinatra, rspec
+  tags: sinatra, rspec, todo
   language: ruby
   resources: 2
 ---
@@ -19,10 +19,6 @@ sure it works in the browser as well.
 How do you get the /hello path to work with a name?
 `hint: you need query string parameters`
 
-# Deliverable
-
-Post a link to a github repo for this problem, with passing specs, to
-Piazza
 
 ## Resources
 * [Thoughtbot](http://robots.thoughtbot.com/) - [How to Test Sinatra-Based Web Applications](http://robots.thoughtbot.com/how-to-test-sinatra-based-web-services)
