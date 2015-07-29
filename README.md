@@ -1,8 +1,4 @@
----
-  tags: sinatra, rspec, todo, optional params
-  language: ruby
-  resources: 2
----
+
 
 # Sinatra, RSpec, and Rack::Test
 
